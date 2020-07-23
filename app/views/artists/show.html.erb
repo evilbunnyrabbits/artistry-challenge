@@ -1,0 +1,8 @@
+<h1>Artist: <%=@artist.name %></h1>
+
+<p>Age: <%= @artist.age %></p><br>
+<p>Title: <%= @artist.title %></p><br>
+<p>Instruments:<br><br>
+  <%@artist.instruments.each do |instrument| %>
+    <%= instrument.name %></p><br>
+<% end %>
